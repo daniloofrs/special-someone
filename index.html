@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Modelo interativo e elegante para mensagens personalizadas e homenagens especiais.">
+  
+  <!-- Open Graph / Redes / Compartilhamento -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Para Alguém Especial · Modelo Interativo">
+  <meta property="og:description" content="Um modelo elegante e interativo para homenagens e mensagens personalizadas.">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Para Alguém Especial · Modelo Interativo">
+  <meta name="twitter:description" content="Um modelo elegante e interativo para homenagens e mensagens personalizadas.">
+
+  <title>Para Alguém Especial · Modelo Interativo</title>
+
+  <!-- Favicon SVG minimalista -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- TELA 0: ENVELOPE DIGITAL / GESTO DE ENTRADA -->
+  <!-- ========================================== -->
+  <div id="envelope-gate" class="envelope-gate" role="dialog" aria-modal="true" aria-label="Abertura da demonstração">
+    <div class="envelope-card">
+      <span class="envelope-badge" id="env-badge">Modelo de Demonstração</span>
+      <h1 class="envelope-title" id="env-title">Para Alguém Especial.</h1>
+      <p class="envelope-subtitle" id="env-subtitle">
+        Este é um exemplo de introdução interativa que pode ser personalizada para qualquer pessoa ou ocasião.
+      </p>
+      <button id="open-envelope-btn" class="envelope-btn" type="button">
+        <span id="env-btn-label">Abrir demonstração</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- CABEÇALHO FIXO MINIMALISTA -->
+  <!-- ========================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="header-brand" id="header-brand">Para Alguém Especial</span>
+      <div class="header-controls">
+        <!-- Alternador de Tema Claro/Escuro -->
+        <button id="theme-toggle-btn" class="control-btn" type="button" aria-label="Alternar tema de cores" title="Alternar tema">
+          <!-- Ícone Sol (tema escuro ativo) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <!-- Ícone Lua (tema claro ativo) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <path d="M12 3a6 6 0 0 0 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- ========================================== -->
+  <main class="main-wrapper" id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-tag" id="hero-tag">Exemplo de Introdução</div>
+      <h1 class="hero-title" id="hero-title">Criando momentos que marcam.</h1>
+      <p class="hero-desc" id="hero-desc">
+        Este é um exemplo de texto de introdução. Aqui você pode escrever uma dedicatória sincera, relembrar momentos marcantes ou celebrar uma amizade, conquista ou homenagem especial.
+      </p>
+    </section>
+
+    <!-- BENTO GRID -->
+    <section class="bento-grid" aria-label="Mural de Detalhes">
+
+      <!-- CARD 1: MEMÓRIA OU MOMENTO (SPAN 2) -->
+      <article class="bento-card span-2" id="card-impressao">
+        <div>
+          <div class="card-meta">
+            <span class="card-tag">Exemplo 01</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 3"></path>
+              </svg>
+            </span>
+          </div>
+          <h2 class="card-title">Uma memória ou momento marcante</h2>
+          <p class="card-body">
+            Espaço reservado para descrever uma história memorável, uma recordação marcante ou uma mensagem especial sobre a importância dessa pessoa. Este texto serve como demonstração de layout editorial.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span>Exemplo de nota</span>
+          <span>✦ Modelo</span>
+        </div>
+      </article>
+
+      <!-- CARD 2: DETALHES E QUALIDADES (SPAN 1) -->
+      <article class="bento-card span-1" id="card-detalhes">
+        <div>
+          <div class="card-meta">
+            <span class="card-tag">Exemplo 02</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </span>
+          </div>
+          <h2 class="card-title">Pequenos detalhes e qualidades</h2>
+          <ul class="details-list" id="details-list-container">
+            <!-- Inserido dinamicamente via script.js -->
+          </ul>
+        </div>
+        <div class="card-footer">
+          <span>Campos customizáveis</span>
+        </div>
+      </article>
+
+      <!-- CARD 3: MINI PLAYER DE ÁUDIO AMBIENTE (SPAN 1) -->
+      <article class="bento-card span-1" id="card-musica">
+        <div class="audio-card-inner">
+          <div>
+            <div class="card-meta">
+              <span class="card-tag">Trilha Sonora</span>
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9 18V5l12-2v13"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+              </span>
+            </div>
+            <div class="audio-track-info">
+              <h2 class="audio-track-title" id="audio-title">Música Dedicada</h2>
+              <p class="audio-track-subtitle" id="audio-subtitle">Piano Solo · Exemplo de Faixa Ambiente</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="audio-controls">
+              <button id="audio-play-btn" class="play-toggle-btn" type="button" aria-label="Tocar áudio ambiente">
+                <!-- Ícone Play -->
+                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="6 4 20 12 6 20 6 4"></polygon>
+                </svg>
+                <!-- Ícone Pause -->
+                <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                  <rect x="6" y="4" width="4" height="16"></rect>
+                  <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+              </button>
+
+              <div class="audio-bars-visualizer" id="visualizer-container" aria-hidden="true">
+                <span class="audio-bar"></span>
+                <span class="audio-bar"></span>
+                <span class="audio-bar"></span>
+                <span class="audio-bar"></span>
+                <span class="audio-bar"></span>
+              </div>
+            </div>
+            <div class="audio-status-pill" id="audio-status-text">Toque para ouvir</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 4: CONTADOR DE TEMPO MONOSPACE COM SIMULADOR (SPAN 2) -->
+      <article class="bento-card span-2" id="card-tempo">
+        <div>
+          <div class="card-meta">
+            <span class="card-tag">Linha do Tempo</span>
+            <div class="card-actions-meta">
+              <button id="simulate-date-btn" class="time-simulate-btn" type="button" title="Simular com sua própria data">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+                <span>Simular data</span>
+              </button>
+              <input type="datetime-local" id="simulate-date-input" class="simulate-date-input" aria-label="Escolher data para simulação">
+            </div>
+          </div>
+          <h2 class="card-title">Contador de tempo decorrido</h2>
+          <p class="card-body" id="time-lead-text">
+            Exemplo de contador ao vivo calculando o tempo a partir de uma data especial:
+          </p>
+
+          <div class="time-counter-grid" aria-live="off">
+            <div class="time-box">
+              <div class="time-value" id="count-days">--</div>
+              <div class="time-label">Dias</div>
+            </div>
+            <div class="time-box">
+              <div class="time-value" id="count-hours">--</div>
+              <div class="time-label">Horas</div>
+            </div>
+            <div class="time-box">
+              <div class="time-value" id="count-minutes">--</div>
+              <div class="time-label">Minutos</div>
+            </div>
+            <div class="time-box">
+              <div class="time-value" id="count-seconds">--</div>
+              <div class="time-label">Segundos</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span id="time-footer-note">Você pode simular qualquer data clicando no botão acima.</span>
+          <button id="reset-date-btn" class="date-reset-btn" type="button" style="display:none;">Restaurar data</button>
+        </div>
+      </article>
+
+      <!-- CARD 5: ENCERRAMENTO (SPAN 3) -->
+      <article class="bento-card span-3 closing-card" id="card-fechamento">
+        <div class="card-meta">
+          <span class="card-tag">Exemplo Final</span>
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+          </span>
+        </div>
+        <h2 class="card-title">Mensagem de encerramento</h2>
+        <p class="closing-text" id="closing-content">
+          Espaço reservado para o fechamento da homenagem: votos de felicidade, agradecimentos sinceros, votos de sucesso ou um convite para celebrar pessoalmente. Um espaço dedicado a palavras autênticas.
+        </p>
+        <div class="signature-block">
+          <span class="signature-signoff">Com carinho,</span>
+          <span class="signature-author" id="signature-author">Seu Nome</span>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- SEÇÃO FINAL & BOTÃO DE COMPARTILHAMENTO -->
+    <section class="final-cta-section" aria-labelledby="cta-heading">
+      <p class="cta-tagline" id="cta-heading">Gostou deste modelo?</p>
+      <button id="share-action-btn" class="share-action-btn" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+        <span>Compartilhar este modelo</span>
+      </button>
+      <p class="cta-subtext">Compartilhe este projeto ou envie para alguém especial</p>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ DISCRETO -->
+  <footer class="site-footer">
+    <p>Criado com cuidado e apreço · <span id="footer-year">2026</span></p>
+  </footer>
+
+  <!-- NOTIFICAÇÃO TOAST ESTILO APPLE -->
+  <div id="toast-notification" class="toast-notification" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>Link copiado para a área de transferência!</span>
+  </div>
+
+  <!-- Elemento de Áudio Oculto -->
+  <audio id="ambient-audio" preload="none"></audio>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

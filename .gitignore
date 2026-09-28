@@ -1,0 +1,9 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações de agentes / IDE locais
+.agents/
+skills-lock.json
+.vscode/
+.idea/
